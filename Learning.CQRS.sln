@@ -1,0 +1,212 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Presentation", "1.Presentation", "{01DCAF40-E080-426A-9346-4E58D129CC7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAF.LearningCenter.WebApp", "SAF.SchoolPanel.WebApp\SAF.LearningCenter.WebApp.csproj", "{451AB1FD-3092-40A6-BE1E-8AF9C1A80BC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E065DAD3-D1C9-40DC-8463-38FA45235C77}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Application", "2.Application", "{EF3E35EF-2767-43F5-A233-0A040E6AC81A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Domain", "3.Domain", "{B51E9034-C5DE-4B5D-B40B-77A442ACD72E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Repository", "4.Repository", "{71866370-E1C7-470F-B657-335E8ACD8100}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Handler", "5.Handler", "{2EB476E1-DC91-40D4-B44F-36805104F006}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.QueryService", "6.QueryService", "{4FFA9335-A2B3-4672-9EA7-568C59CA16F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7.Message", "7.Message", "{1CE04173-2445-4C58-8E98-A9077B6BF81C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8.Infrastracture", "8.Infrastracture", "{18724CA9-FBD0-4DDE-9A3A-4178E465CE56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.CQRS.ReadApi", "Learning.CQRS.ReadApi\Learning.CQRS.ReadApi.csproj", "{6EE225D4-40F1-4BF3-9F5C-27842FE38690}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.CQRS.WriteApi", "Learning.CQRS.WriteApi\Learning.CQRS.WriteApi.csproj", "{A8540713-4DA1-465C-9A1A-BD36C54A533C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.CQRS.Domain", "Learning.CQRS.Domain\Learning.CQRS.Domain.csproj", "{2E10753C-7546-4D0B-B08F-09716FFA0A50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.CQRS.Repository", "Learning.CQRS.Repository\Learning.CQRS.Repository.csproj", "{12524F3F-35C5-461C-9C7D-78A016882375}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.CQRS.Repository.Read.Implement", "Learning.CQRS.Repository.Read.Implement\Learning.CQRS.Repository.Read.Implement.csproj", "{99A2DCAB-8D7E-46A7-9671-DD752335C169}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.CQRS.Repository.Read", "Learning.CQRS.Repository.Read\Learning.CQRS.Repository.Read.csproj", "{811C8CEE-898B-4B67-9FAD-0798D5561DC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.CQRS.Repository.Write", "Learning.CQRS.Repository.Write\Learning.CQRS.Repository.Write.csproj", "{0F8D2368-6DE0-49A5-925D-C05E11040318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.CQRS.Repository.Write.Implement", "Learning.CQRS.Repository.Write.Implement\Learning.CQRS.Repository.Write.Implement.csproj", "{CF7C1B98-30EC-4D7C-98D2-310C1130CE3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.CQRS.Handler", "Learning.CQRS.Handler\Learning.CQRS.Handler.csproj", "{B99199C6-4B63-4BC6-B315-AF643A44B008}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.CQRS.QueryService.Implement", "Learning.CQRS.QueryService.Implement\Learning.CQRS.QueryService.Implement.csproj", "{A278395D-2732-470D-B6C1-2118E6D6CA15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.CQRS.QueryService.Interface", "Learning.CQRS.QueryService.Interface\Learning.CQRS.QueryService.Interface.csproj", "{BEC84F4F-4188-454C-BE4F-FFAD9278DE93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.CQRS.Messages.Command", "Learning.CQRS.Messages.Command\Learning.CQRS.Messages.Command.csproj", "{3DB4E445-8B6B-4E4E-B27C-9078BDE3EEEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.CQRS.Messages.QueryModel", "Learning.CQRS.Messages.QueryModel\Learning.CQRS.Messages.QueryModel.csproj", "{BF814E29-40BF-4D6C-A38A-23384D747B4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning.CQRS.Infrastructure", "Learning.CQRS.Infrastructure\Learning.CQRS.Infrastructure.csproj", "{5D4326B2-7E69-4351-8834-D4583171860E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{451AB1FD-3092-40A6-BE1E-8AF9C1A80BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{451AB1FD-3092-40A6-BE1E-8AF9C1A80BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{451AB1FD-3092-40A6-BE1E-8AF9C1A80BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{451AB1FD-3092-40A6-BE1E-8AF9C1A80BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EE225D4-40F1-4BF3-9F5C-27842FE38690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EE225D4-40F1-4BF3-9F5C-27842FE38690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EE225D4-40F1-4BF3-9F5C-27842FE38690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EE225D4-40F1-4BF3-9F5C-27842FE38690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8540713-4DA1-465C-9A1A-BD36C54A533C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8540713-4DA1-465C-9A1A-BD36C54A533C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8540713-4DA1-465C-9A1A-BD36C54A533C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8540713-4DA1-465C-9A1A-BD36C54A533C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E10753C-7546-4D0B-B08F-09716FFA0A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E10753C-7546-4D0B-B08F-09716FFA0A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E10753C-7546-4D0B-B08F-09716FFA0A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E10753C-7546-4D0B-B08F-09716FFA0A50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12524F3F-35C5-461C-9C7D-78A016882375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12524F3F-35C5-461C-9C7D-78A016882375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12524F3F-35C5-461C-9C7D-78A016882375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12524F3F-35C5-461C-9C7D-78A016882375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99A2DCAB-8D7E-46A7-9671-DD752335C169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A2DCAB-8D7E-46A7-9671-DD752335C169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99A2DCAB-8D7E-46A7-9671-DD752335C169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99A2DCAB-8D7E-46A7-9671-DD752335C169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{811C8CEE-898B-4B67-9FAD-0798D5561DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{811C8CEE-898B-4B67-9FAD-0798D5561DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{811C8CEE-898B-4B67-9FAD-0798D5561DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{811C8CEE-898B-4B67-9FAD-0798D5561DC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F8D2368-6DE0-49A5-925D-C05E11040318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F8D2368-6DE0-49A5-925D-C05E11040318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F8D2368-6DE0-49A5-925D-C05E11040318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F8D2368-6DE0-49A5-925D-C05E11040318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF7C1B98-30EC-4D7C-98D2-310C1130CE3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF7C1B98-30EC-4D7C-98D2-310C1130CE3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF7C1B98-30EC-4D7C-98D2-310C1130CE3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF7C1B98-30EC-4D7C-98D2-310C1130CE3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B99199C6-4B63-4BC6-B315-AF643A44B008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99199C6-4B63-4BC6-B315-AF643A44B008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99199C6-4B63-4BC6-B315-AF643A44B008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99199C6-4B63-4BC6-B315-AF643A44B008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A278395D-2732-470D-B6C1-2118E6D6CA15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A278395D-2732-470D-B6C1-2118E6D6CA15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A278395D-2732-470D-B6C1-2118E6D6CA15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A278395D-2732-470D-B6C1-2118E6D6CA15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEC84F4F-4188-454C-BE4F-FFAD9278DE93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC84F4F-4188-454C-BE4F-FFAD9278DE93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC84F4F-4188-454C-BE4F-FFAD9278DE93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC84F4F-4188-454C-BE4F-FFAD9278DE93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DB4E445-8B6B-4E4E-B27C-9078BDE3EEEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DB4E445-8B6B-4E4E-B27C-9078BDE3EEEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DB4E445-8B6B-4E4E-B27C-9078BDE3EEEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DB4E445-8B6B-4E4E-B27C-9078BDE3EEEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF814E29-40BF-4D6C-A38A-23384D747B4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF814E29-40BF-4D6C-A38A-23384D747B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF814E29-40BF-4D6C-A38A-23384D747B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF814E29-40BF-4D6C-A38A-23384D747B4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D4326B2-7E69-4351-8834-D4583171860E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D4326B2-7E69-4351-8834-D4583171860E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D4326B2-7E69-4351-8834-D4583171860E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D4326B2-7E69-4351-8834-D4583171860E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{451AB1FD-3092-40A6-BE1E-8AF9C1A80BC9} = {01DCAF40-E080-426A-9346-4E58D129CC7B}
+		{6EE225D4-40F1-4BF3-9F5C-27842FE38690} = {EF3E35EF-2767-43F5-A233-0A040E6AC81A}
+		{A8540713-4DA1-465C-9A1A-BD36C54A533C} = {EF3E35EF-2767-43F5-A233-0A040E6AC81A}
+		{2E10753C-7546-4D0B-B08F-09716FFA0A50} = {B51E9034-C5DE-4B5D-B40B-77A442ACD72E}
+		{12524F3F-35C5-461C-9C7D-78A016882375} = {71866370-E1C7-470F-B657-335E8ACD8100}
+		{99A2DCAB-8D7E-46A7-9671-DD752335C169} = {71866370-E1C7-470F-B657-335E8ACD8100}
+		{811C8CEE-898B-4B67-9FAD-0798D5561DC6} = {71866370-E1C7-470F-B657-335E8ACD8100}
+		{0F8D2368-6DE0-49A5-925D-C05E11040318} = {71866370-E1C7-470F-B657-335E8ACD8100}
+		{CF7C1B98-30EC-4D7C-98D2-310C1130CE3B} = {71866370-E1C7-470F-B657-335E8ACD8100}
+		{B99199C6-4B63-4BC6-B315-AF643A44B008} = {2EB476E1-DC91-40D4-B44F-36805104F006}
+		{A278395D-2732-470D-B6C1-2118E6D6CA15} = {4FFA9335-A2B3-4672-9EA7-568C59CA16F4}
+		{BEC84F4F-4188-454C-BE4F-FFAD9278DE93} = {4FFA9335-A2B3-4672-9EA7-568C59CA16F4}
+		{3DB4E445-8B6B-4E4E-B27C-9078BDE3EEEB} = {1CE04173-2445-4C58-8E98-A9077B6BF81C}
+		{BF814E29-40BF-4D6C-A38A-23384D747B4E} = {1CE04173-2445-4C58-8E98-A9077B6BF81C}
+		{5D4326B2-7E69-4351-8834-D4583171860E} = {18724CA9-FBD0-4DDE-9A3A-4178E465CE56}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 16
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://hfjtfs:8080/tfs/phantom
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SAF.SchoolPanel.WebApp\\SAF.LearningCenter.WebApp.csproj
+		SccProjectTopLevelParentUniqueName1 = Learning.CQRS.sln
+		SccProjectName1 = SAF.SchoolPanel.WebApp
+		SccLocalPath1 = SAF.SchoolPanel.WebApp
+		SccProjectUniqueName2 = Learning.CQRS.ReadApi\\Learning.CQRS.ReadApi.csproj
+		SccProjectTopLevelParentUniqueName2 = Learning.CQRS.sln
+		SccProjectName2 = Learning.CQRS.ReadApi
+		SccLocalPath2 = Learning.CQRS.ReadApi
+		SccProjectUniqueName3 = Learning.CQRS.WriteApi\\Learning.CQRS.WriteApi.csproj
+		SccProjectTopLevelParentUniqueName3 = Learning.CQRS.sln
+		SccProjectName3 = Learning.CQRS.WriteApi
+		SccLocalPath3 = Learning.CQRS.WriteApi
+		SccProjectUniqueName4 = Learning.CQRS.Domain\\Learning.CQRS.Domain.csproj
+		SccProjectTopLevelParentUniqueName4 = Learning.CQRS.sln
+		SccProjectName4 = Learning.CQRS.Domain
+		SccLocalPath4 = Learning.CQRS.Domain
+		SccProjectUniqueName5 = Learning.CQRS.Repository\\Learning.CQRS.Repository.csproj
+		SccProjectTopLevelParentUniqueName5 = Learning.CQRS.sln
+		SccProjectName5 = Learning.CQRS.Repository
+		SccLocalPath5 = Learning.CQRS.Repository
+		SccProjectUniqueName6 = Learning.CQRS.Repository.Read.Implement\\Learning.CQRS.Repository.Read.Implement.csproj
+		SccProjectTopLevelParentUniqueName6 = Learning.CQRS.sln
+		SccProjectName6 = Learning.CQRS.Repository.Read.Implement
+		SccLocalPath6 = Learning.CQRS.Repository.Read.Implement
+		SccProjectUniqueName7 = Learning.CQRS.Repository.Read\\Learning.CQRS.Repository.Read.csproj
+		SccProjectTopLevelParentUniqueName7 = Learning.CQRS.sln
+		SccProjectName7 = Learning.CQRS.Repository.Read
+		SccLocalPath7 = Learning.CQRS.Repository.Read
+		SccProjectUniqueName8 = Learning.CQRS.Repository.Write\\Learning.CQRS.Repository.Write.csproj
+		SccProjectTopLevelParentUniqueName8 = Learning.CQRS.sln
+		SccProjectName8 = Learning.CQRS.Repository.Write
+		SccLocalPath8 = Learning.CQRS.Repository.Write
+		SccProjectUniqueName9 = Learning.CQRS.Repository.Write.Implement\\Learning.CQRS.Repository.Write.Implement.csproj
+		SccProjectTopLevelParentUniqueName9 = Learning.CQRS.sln
+		SccProjectName9 = Learning.CQRS.Repository.Write.Implement
+		SccLocalPath9 = Learning.CQRS.Repository.Write.Implement
+		SccProjectUniqueName10 = Learning.CQRS.Handler\\Learning.CQRS.Handler.csproj
+		SccProjectTopLevelParentUniqueName10 = Learning.CQRS.sln
+		SccProjectName10 = Learning.CQRS.Handler
+		SccLocalPath10 = Learning.CQRS.Handler
+		SccProjectUniqueName11 = Learning.CQRS.QueryService.Implement\\Learning.CQRS.QueryService.Implement.csproj
+		SccProjectTopLevelParentUniqueName11 = Learning.CQRS.sln
+		SccProjectName11 = Learning.CQRS.QueryService.Implement
+		SccLocalPath11 = Learning.CQRS.QueryService.Implement
+		SccProjectUniqueName12 = Learning.CQRS.QueryService.Interface\\Learning.CQRS.QueryService.Interface.csproj
+		SccProjectTopLevelParentUniqueName12 = Learning.CQRS.sln
+		SccProjectName12 = Learning.CQRS.QueryService.Interface
+		SccLocalPath12 = Learning.CQRS.QueryService.Interface
+		SccProjectUniqueName13 = Learning.CQRS.Messages.Command\\Learning.CQRS.Messages.Command.csproj
+		SccProjectTopLevelParentUniqueName13 = Learning.CQRS.sln
+		SccProjectName13 = Learning.CQRS.Messages.Command
+		SccLocalPath13 = Learning.CQRS.Messages.Command
+		SccProjectUniqueName14 = Learning.CQRS.Messages.QueryModel\\Learning.CQRS.Messages.QueryModel.csproj
+		SccProjectTopLevelParentUniqueName14 = Learning.CQRS.sln
+		SccProjectName14 = Learning.CQRS.Messages.QueryModel
+		SccLocalPath14 = Learning.CQRS.Messages.QueryModel
+		SccProjectUniqueName15 = Learning.CQRS.Infrastructure\\Learning.CQRS.Infrastructure.csproj
+		SccProjectTopLevelParentUniqueName15 = Learning.CQRS.sln
+		SccProjectName15 = Learning.CQRS.Infrastructure
+		SccLocalPath15 = Learning.CQRS.Infrastructure
+	EndGlobalSection
+EndGlobal

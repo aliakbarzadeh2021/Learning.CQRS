@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF814E29-40BF-4D6C-A38A-23384D747B4E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Learning.CQRS.Messages.QueryModel</RootNamespace>
+    <AssemblyName>Learning.CQRS.Messages.QueryModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Learning.CQRS.Infrastructure, Version=1.0.1.540, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Learning.CQRS.Infrastructure.1.0.1.540\lib\net45\Learning.CQRS.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ElectronicDocument\IMultimediaDto.cs" />
+    <Compile Include="ElectronicDocument\IBookletDto.cs" />
+    <Compile Include="ElectronicDocument\IThesisDto.cs" />
+    <Compile Include="ElectronicDocument\IArticleDto.cs" />
+    <Compile Include="ElectronicDocument\IMagazinDto.cs" />
+    <Compile Include="ElectronicDocument\IBookDto.cs" />
+    <Compile Include="ElectronicSource\IInformationBaseDto.cs" />
+    <Compile Include="ElectronicSource\IEducationalGameDto.cs" />
+    <Compile Include="ILeasonGradeDto.cs" />
+    <Compile Include="IConfirmationDto.cs" />
+    <Compile Include="IPrivilegeDto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Learning.CQRS.Infrastructure\Learning.CQRS.Infrastructure.csproj">
+      <Project>{5d4326b2-7e69-4351-8834-d4583171860e}</Project>
+      <Name>Learning.CQRS.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Learning.CQRS.Messages.Command\Learning.CQRS.Messages.Command.csproj">
+      <Project>{3DB4E445-8B6B-4E4E-B27C-9078BDE3EEEB}</Project>
+      <Name>Learning.CQRS.Messages.Command</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DB4E445-8B6B-4E4E-B27C-9078BDE3EEEB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Learning.CQRS.Messages.Command</RootNamespace>
+    <AssemblyName>Learning.CQRS.Messages.Command</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentValidation, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.7.1.1\lib\net45\FluentValidation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Learning.CQRS.CommandBus.Messages, Version=1.0.1.90, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Learning.CQRS.CommandBus.Messages.1.0.1.90\lib\net451\Learning.CQRS.CommandBus.Messages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Learning.CQRS.Event, Version=1.0.1.331, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Learning.CQRS.Event.1.0.1.331\lib\net451\Learning.CQRS.Event.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Learning.CQRS.Infrastructure, Version=1.0.1.540, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Learning.CQRS.Infrastructure.1.0.1.540\lib\net45\Learning.CQRS.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LearningCenterModule\Messages\ElectronicDocument\CreateBookCommand.cs" />
+    <Compile Include="LearningCenterModule\Messages\Items\ConfirmationItem.cs" />
+    <Compile Include="LearningCenterModule\Messages\Items\LeasonGradeItem.cs" />
+    <Compile Include="LearningCenterModule\Messages\Items\PrivilegeItem.cs" />
+    <Compile Include="LearningCenterModule\Messages\ElectronicSource\CreateEducationalGameCommand.cs" />
+    <Compile Include="LearningCenterModule\Validators\ElectronicDocument\CreateBookCommandValidator.cs" />
+    <Compile Include="LearningCenterModule\Validators\ElectronicSource\CreateEducationalGameCommandValidator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seedworks\ValidationResultExtension.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LearningCenterModule\Items\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Learning.CQRS.Infrastructure\Learning.CQRS.Infrastructure.csproj">
+      <Project>{5d4326b2-7e69-4351-8834-d4583171860e}</Project>
+      <Name>Learning.CQRS.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
